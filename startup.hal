@@ -1,0 +1,8 @@
+event startup
+begin
+  SetLangMode(LangRussian,"RUS",0);
+  
+  Maintenance("Удалить все записи",CustomRegisterRemoveVClass,CustomRegisterRemoveMn,modDBMain);
+
+	return;
+end;

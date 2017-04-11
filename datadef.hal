@@ -1,0 +1,16 @@
+SourceFile("halcust\\halpatch",0);
+SourceFile("halcust\\Import",0);
+SourceFile("halcust\\Report",0);
+SourceFile("halcust\\RemoteWA",0);
+SourceFile("halcust\\Windows",0);
+SourceFile("halcust\\WAction",0);
+SourceFile("halcust\\RAction",0);
+SourceFile("halcust\\Web",0);
+
+
+begin
+
+
+return;
+end;
+

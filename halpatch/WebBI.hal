@@ -139,7 +139,6 @@ begin
               readfirstmain(INr,1,true);
               type = "UNKNOWN";
               brand = "UNKNOWN";
-              if (INr.Group == "Éè") then begin
                 brand = vName[INr.Group];
                 if !vBarndInArr[brand] then begin
                   aBrand[b] = brand;
@@ -147,15 +146,12 @@ begin
                   vBarndInArr[brand] = true;
                   b = b + 1;
                 end;
-              end;
               tstr = "";
               pos = 0;
               ExtractObjWithSeparator(",",INr.DispGroups,true,pos,tstr);
               while(nonblank(tstr))begin
                 if(nonblank(tstr))then begin
-                  if(vClass[tstr]=="ÇàÑ_Éè")then begin
-                    type = vName[tstr];
-                  end;
+                  type = vName[tstr];
                 end;
                 ExtractObjWithSeparator(",",INr.DispGroups,true,pos,tstr);
               end;
